@@ -1,0 +1,134 @@
+<!-- Registration Page -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Register Page</title>
+	<link rel='icon' href='../resources/img/favicon.ico' type='image/x-icon'/>
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="../resources/css/my_style.css" rel="stylesheet">
+  </head>
+  <body>
+	
+	<img src="../resources/img/beproudcapaabanner.jpg" class="img-fluid" alt="Registration Page Banner for CU Football">
+    <br>
+	<br>
+	<div class="container">
+		<form action="home.html">
+			<!--
+				Todo: Create a form with the following fields:
+					1. Name Text Field
+					2. Email Text Field
+					3. Password Text Field
+					4. Password Confirmation Text Field
+					5. Email Text Field
+					6. CU Boulder Alumni Radio Button
+					7. CU Boulder Student Radio Button
+					8. CU Boulder Undergrad/Grad Radio Button
+					9. Undergraduate Select (Freshman-Senior)
+					10. Graduate Select (MA, MBA, PhD)
+					11. Submit Button (links to home page)
+
+			-->
+			<div class="form-group row">
+				<label for="staticName" class="col-sm-2 col-form-label">Full Name</label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" id="InputFullName" aria-describedby="nameHelp" placeholder="Enter Name">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="staticEmail" class="col-sm-2 col-form-label">Email Address</label>
+				<div class="col-sm-6">
+					<input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="staticPassword" class="col-sm-2 col-form-label">Password</label>
+				<div class="col-sm-6">
+					<input type="password" class="form-control" id="InputPassport" aria-describedby="passHelp" placeholder="Password">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="staticCPassword" class="col-sm-2 col-form-label">Confirm Password</label>
+				<div class="col-sm-6">
+					<input type="password" class="form-control" id="InputCPassword" aria-describedby="cPassHelp" placeholder="Confirm Password">
+				</div>
+			</div>
+			<div class="form-group row">
+				<legend class="col-form-label col-sm-2 pt-0">CU Boulder Alumni</legend>
+				<div class="col-sm-6">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="alumni" id="alumni1" value="yes">
+						<label class="form-check-label" for="gridRadios1">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="alumni" id="alumni2" value="no">
+						<label class="form-check-label" for="gridRadios2">
+							No
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<legend class="col-form-label col-sm-2 pt-0">CU Boulder Student</legend>
+				<div class="col-sm-6">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student" id="student1" value="yes">
+						<label class="form-check-label" for="gridRadios1">
+							Yes
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="student" id="student2" value="no">
+						<label class="form-check-label" for="gridRadios2">
+							No
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-group row">
+				<legend class="col-form-label col-sm-2 pt-0">Student Status</legend>
+				<div class="col-sm-6">
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="status" id="status1" value="under">
+						<label class="form-check-label" for="gridRadios1">
+							Undergrad
+						</label>
+						<select class="custom-select mr-sm-2" id="underSelect">
+							<option selected>Pick an Option...</option>
+							<option value="1">Freshman</option>
+							<option value="2">Sophomore</option>
+							<option value="3">Junior</option>
+							<option value="4">Senior</option>
+						</select>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="status" id="status2" value="grad">
+						<label class="form-check-label" for="gridRadios2">
+							Graduate
+						</label>
+						<select class="custom-select mr-sm-2" id="gradSelect">
+							<option selected>Pick an Option...</option>
+							<option value="1">Freshman</option>
+							<option value="2">Sophomore</option>
+							<option value="3">Junior</option>
+							<option value="4">Senior</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class ="col-sm-8">
+				<input type="submit" value="Submit" class="btn btn-primary btn-block">
+			</div>
+		</form>
+	</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
