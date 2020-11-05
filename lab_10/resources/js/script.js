@@ -45,7 +45,7 @@ $(document).ready(function() {
       var precip_today = data.current.precip;
       $("#precip_today").html(precip_today + " mm");
       var humidity_today = data.current.humidity;
-      $("#humidity_today").html(humidity_today);
+      $("#humidity_today").html(humidity_today + "%");
       var wind_today = data.current.wind_speed;
       $("#wind_today").html(wind_today);
       var summary_today = data.current.weather_descriptions;
@@ -118,8 +118,8 @@ $(document).ready(function() {
                   '<div class="card">'+
                       '<div class="card-body">'+
                       '<h5 class="card-title">'+dayOfWeek +'</h5>'+
-                        '<p class="card-text">High: '+ forecast_data.maxtemp + '<br>' +
-                        'Low: '+ forecast_data.mintemp + '\n <br>' +
+                        '<p class="card-text">High: '+ getFarenheitTemp(forecast_data.maxtemp) + ' °F<br>' +
+                        'Low: '+ getFarenheitTemp(forecast_data.mintemp) + ' °F\n <br>' +
                         'Sunrise: '+ forecast_data.astro.sunrise + '\n <br>' +
                         'Sunset: '+ forecast_data.astro.sunset + '\n <br>' +
                       '</div>'+
